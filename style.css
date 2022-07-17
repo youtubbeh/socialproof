@@ -20,6 +20,7 @@ h1 {
 
 .rating-1, .rating-2, .rating-3 {
   background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
 }
 
 .rating-text {
@@ -30,6 +31,7 @@ h1 {
 
 article {
   background-color: hsl(300, 43%, 22%);
+  border-radius: 5px;
 }
 
 .profile-pic {
