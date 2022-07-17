@@ -7,20 +7,81 @@
 
 body {
   font-family: 'League Spartan', sans-serif;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 80px 120px;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1040px;
+  max-height: 150px;
+  margin-bottom: 100px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  max-height: 150px;
+  max-width: 380px;
+  justify-content: flex-start;
+}
+
+.info, .ratings {
+  width: 520px;
 }
 
 h1 {
   color: hsl(300, 43%, 22%);
+  font-size: 44px;
+  margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .description {
   color: hsl(303, 10%, 53%);
   font-size: 15px;
+  line-height: 1.3em;
+  margin: 0;
+}
+
+.ratings {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
 }
 
 .rating-1, .rating-2, .rating-3 {
   background-color: hsl(300, 24%, 96%);
-  border-radius: 5px;
+  border-radius: 8px;
+  display: flex;
+  width: 330px;
+  align-items: center;
+  gap: 20px;
+  padding: 0px 20px;
+}
+
+.rating-1 {
+  align-self: flex-start;
+}
+
+.rating-2 {
+  align-self: center;
+}
+
+.rating-3 {
+  align-self: flex-end;
 }
 
 .rating-text {
@@ -29,28 +90,46 @@ h1 {
   font-weight: 700;
 }
 
+.reviews {
+  display: flex;
+}
+
 article {
   background-color: hsl(300, 43%, 22%);
-  border-radius: 5px;
+  border-radius: 8px;
+  padding: 35px;
+  height: 150px;
+  width: 33%; 
 }
 
 .profile-pic {
   border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+
+.buyer {
+  display: flex;
+  align-items: center;
 }
 
 h2 {
   color: white;
   font-weight: 700;
+  font-size: 15px;
 }
 
 span {
+  display: block;
   color: hsl(333, 80%, 67%);
   font-weight: 500;
 }
 
 .review-text {
   color: hsl(300, 24%, 96%);
+  font-size: 15px;
   font-weight: 500;
+  line-height: 1.3em;
 }
 
 .attribution {
