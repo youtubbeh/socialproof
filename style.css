@@ -11,7 +11,7 @@ body {
   margin: 0 auto;
   padding: 80px 120px;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
 }
 
 main {
@@ -92,14 +92,30 @@ h1 {
 
 .reviews {
   display: flex;
+  width: 1040px;
+  height: 250px;
+  justify-content: space-between;
 }
 
 article {
   background-color: hsl(300, 43%, 22%);
   border-radius: 8px;
-  padding: 35px;
-  height: 150px;
-  width: 33%; 
+  padding: 20px;
+  max-height: 180px;
+  max-width: 28%;
+  flex-grow: 0;
+}
+
+.colton {
+  align-self: flex-start;
+}
+
+.irene {
+  align-self: center;
+}
+
+.anne {
+  align-self: flex-end;
 }
 
 .profile-pic {
@@ -117,12 +133,14 @@ h2 {
   color: white;
   font-weight: 700;
   font-size: 15px;
+  margin-left: 20px;
 }
 
 span {
   display: block;
   color: hsl(333, 80%, 67%);
   font-weight: 500;
+  margin-top: 3px;
 }
 
 .review-text {
@@ -135,6 +153,12 @@ span {
 .attribution {
     font-size: 11px;
     text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    right: 50%;
+    width: fit-content;
+    transform: translate(-50%, 0%);
 }
 
   .attribution a {
